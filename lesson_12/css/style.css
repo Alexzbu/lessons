@@ -13,7 +13,7 @@
 }
 
 [class*= "__container"]{
-	max-width: 1281px;
+	max-width: 1250px;
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -108,15 +108,20 @@
 
 /* -------------- Team ---------------------------*/
 
-.block-team__items {
+.block-team__items-rows {
 	padding: 20px 0;
 	font-size: 0;
+}
+.block-team__item-row:not(:last-child) {
+	margin-bottom: 31px;
 }
 .block-team__item {
 	display: inline-block;
 	position: relative;
 	max-width: 386px;
-	margin: 0 31px 31px 0;
+}
+.block-team__item:not(:last-child) {
+	margin-right: 31px;
 }
 
 .block-team__item::before {
@@ -135,8 +140,6 @@
 }
 .block-team__item:hover .block-team__item-social {
 	visibility: visible;
-}
-.block-team__item-img {
 }
 .block-team__item-info {
 	position: absolute;
